@@ -34,9 +34,9 @@ my $data = {
         fail => { SSL_verify_callback => sub { 0 }, SSL_verify_mode => 0x01 },
         default_should_yield => '1',
     },
-    'https://twitter.com/' => {
+    'https://mozilla-modern.badssl.com/' => {
         host => 'twitter.com',
-        pass => { SSL_verifycn_scheme => 'http', SSL_verifycn_name => 'twitter.com', SSL_verify_mode => 0x01, SSL_ca_file => Mozilla::CA::SSL_ca_file() },
+        pass => { SSL_verifycn_scheme => 'http', SSL_verifycn_name => 'mozilla-modern.badssl.com', SSL_verify_mode => 0x01, SSL_ca_file => Mozilla::CA::SSL_ca_file() },
         fail => { SSL_verify_callback => sub { 0 }, SSL_verify_mode => 0x01 },
         default_should_yield => '1',
     },
